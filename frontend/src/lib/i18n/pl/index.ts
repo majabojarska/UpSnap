@@ -60,10 +60,12 @@ const pl = {
 		ports_name: 'Nazwa',
 		ports_number: 'Numer',
 		link: 'Link',
-		link_desc: // TODO:
+		// TODO:
+		link_desc:
 			'Makes your device name a clickable link, perfect for linking a dashboard for example.',
 		ping: 'Ping',
-		ping_desc: // TODO:
+		// TODO:
+		ping_desc:
 			'You can use a custom shell command to see if the device is powered on. The command should return an exit code of <span class="badge">0</span> to indicate that the device is powered on, any other exit code will mark the device as powered off.',
 		ping_cmd: 'Niestandardowa komenda ping',
 		wake: 'Wybudzanie',
