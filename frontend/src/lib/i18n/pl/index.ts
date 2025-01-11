@@ -2,15 +2,15 @@ import type { BaseTranslation } from '../i18n-types';
 
 const pl = {
 	home: {
-		page_title: 'Home',
-		order_groups: 'Groups',
-		order_name: 'Name',
+		page_title: 'Strona Główna',
+		order_groups: 'Grupowanie',
+		order_name: 'Nazwa',
 		order_ip: 'IP',
-		order_tooltip: 'Order',
-		no_devices: 'No devices here.',
-		add_first_device: 'Add your first device',
+		order_tooltip: 'Kolejność',
+		no_devices: 'Brak urządzeń.',
+		add_first_device: 'Dodaj pierwsze urządzenie',
 		grant_permissions:
-			'Please ask the admin to grant you permissions to existing devices or to create new ones.'
+			'Poproś administratora o przyznanie uprawnień do istniejących urządzeń lub do tworzenia nowych.'
 	},
 	account: {
 		page_title: 'Konto',
