@@ -39,7 +39,7 @@ const pl = {
 		card_password: 'Hasło',
 		card_nic_tooltip_pending: 'Oczekiwanie',
 		card_nic_tooltip_shutdown: 'Wyłącz',
-		card_nic_tooltip_shutdown_no_cmd: 'Brak ustawionej komendy do wyłączania',
+		card_nic_tooltip_shutdown_no_cmd: 'Brak ustawionej polecenia do wyłączania',
 		card_nic_tooltip_shutdown_no_permission: 'Brak uprawnień do wyłączania tego urządzenia',
 		card_nic_tooltip_power: 'Włącz',
 		card_nic_tooltip_power_no_permission: 'Brak uprawnień do włączania tego urządzenia',
@@ -55,31 +55,30 @@ const pl = {
 		general_netmask: 'Maska sieci',
 		general_required_field: 'pole wymagane',
 		ports: 'Porty',
-		ports_desc: 'UpSnap może również sprawdzić czy podane porty są otwarte.',
+		ports_desc: 'UpSnap może sprawdzić czy podane porty są otwarte.',
 		ports_add_new: 'Dodaj nowy port',
 		ports_name: 'Nazwa',
 		ports_number: 'Numer',
 		link: 'Link',
-		// TODO:
 		link_desc:
-			'Makes your device name a clickable link, perfect for linking a dashboard for example.',
+			'Czyni Twoje urządzenie linkiem możliwym do kliknięcia, świetne do linkowania np. dashboardu.',
 		ping: 'Ping',
 		// TODO:
 		ping_desc:
-			'You can use a custom shell command to see if the device is powered on. The command should return an exit code of <span class="badge">0</span> to indicate that the device is powered on, any other exit code will mark the device as powered off.',
-		ping_cmd: 'Niestandardowa komenda ping',
-		wake: 'Wybudzanie',
+			'Możesz wykorzystać niestandardowe polecenie powłoki, aby sprawdzić, czy urządzenie jest włączone. Polecenie powinno zwrócić kod zakończenia <span class="badge">0</span> aby wskazać, że urządzenie jest włączone. Dowolny inny kod zakończenia poskutkuje oznaczeniem urządzenia jako wyłączone.',
+		ping_cmd: 'Niestandardowe polecenie ping',
+		wake: 'Włączanie',
 		wake_desc: 'Możesz włączyć to urządzenie za pomocą zaplanowanego zadania cron.',
-		wake_cmd: 'Niestandardowa komenda włączania',
+		wake_cmd: 'Niestandardowe polecenie do włączania',
 		wake_cron: 'Cron do włączania',
 		wake_cron_enable: 'Włącz cron do włączania',
 		sol: 'Sleep-On-LAN',
 		sol_desc1:
-			'You can put computers to sleep using the <a class="link" href="https://github.com/SR-G/sleep-on-lan" target="_blank">Sleep-On-LAN</a> tool. Sleep-On-LAN (SOL) is an external tool/daemon that operates on the PCs you want to put to sleep, providing a REST endpoint. For instructions on setting up Sleep-On-LAN, please refer to the <a href="https://github.com/SR-G/sleep-on-lan#usage" class="link" target="_blank">Usage</a> section.',
+			'Możesz wyłączać urządzenia za pomocą narzędzia <a class="link" href="https://github.com/SR-G/sleep-on-lan" target="_blank">Sleep-On-LAN</a>. Sleep-On-LAN (SOL) jest zewnętrznym narzędziem/demonem, działającym na urządzeniach które chcesz wyłączać. Tworzy on endpoint REST. Aby dowiedzieć się jak skonfigurować SOL, zapoznaj się z <a href="https://github.com/SR-G/sleep-on-lan#usage" class="link" target="_blank">instrukcją użytkownika</a>.',
 		sol_desc2:
-			'SOL is configured to send requests over HTTP instead of UDP to enable authorization and make requests more reliable.',
+			'SOL przyjmuje żądania za pomocą HTTP zamiast UDP, aby zwiększyć niezawodność i umożliwić autoryzację.',
 		sol_desc3:
-			'Therefore, please ensure that you include <span class="badge">HTTP:&lt;YOURPORT&gt;</span> in the <span class="badge">Listeners</span> section of the <a href="https://github.com/SR-G/sleep-on-lan#configuration" class="link" target="_blank">SOL configuration</a>.',
+			'W związku z tym, uwzględnij <span class="badge">HTTP:&lt;TWÓJPORT&gt;</span> w sekcji <span class="badge">Listeners</span> twojej <a href="https://github.com/SR-G/sleep-on-lan#configuration" class="link" target="_blank">konfiguracji SOL</a>.',
 		sol_enable: 'Włącz Sleep-On-LAN',
 		sol_port: 'Port SOL',
 		sol_authorization: 'Autoryzacja',
@@ -87,38 +86,38 @@ const pl = {
 		sol_password: 'Hasło SOL',
 		shutdown: 'Wyłącz',
 		shutdown_desc:
-			'Ta <strong>komenda shell</strong> zostanie wywołana w Twoim kontenerze (jeżeli używasz Dockera) lub na Twoim hoście (jeżeli używasz pliku binarnego). Aby zweryfikować jej działanie, możesz najpierw uruchomić tą komendę wewnątrz kontenera lub na hoście. Powszechne komendy to <span class="badge">net rpc</span> dla Windowsa, <span class="badge">sshpass</span> dla Linuxa lub <span class="badge">curl</span> do wykonywania żądań internetowych.',
+			'To <strong>polecenie powłoki</strong> zostanie wywołane w Twoim kontenerze (jeżeli używasz Dockera) lub na Twoim hoście (jeżeli używasz pliku binarnego). Aby zweryfikować jego działanie, możesz najpierw uruchomić to polecenie wewnątrz kontenera lub na hoście. Powszechne polecenia to <span class="badge">net rpc</span> dla Windowsa, <span class="badge">sshpass</span> dla Linuxa lub <span class="badge">curl</span> do wykonywania żądań internetowych.',
 		shutdown_examples: 'Przykłady:',
 		shutdown_examples_windows: 'Wyłącz zdalną maszynę Windows:',
 		shutdown_examples_linux: 'Wyłącz zdalną maszynę Linux:',
-		shutdown_cmd: 'Komenda do wyłączania',
+		shutdown_cmd: 'Polecenie do wyłączania',
 		shutdown_cron_desc:
-			'Podobnie jak możesz zaplanować zadanie cron do włączania urządzenia, możesz również zaplanować zadanie cron do jego wyłączania.',
+			'Podobnie jak możesz harmonogramować zadanie cron do włączania urządzenia, możesz robić to również do jego wyłączania.',
 		shutdown_cron: 'Cron do wyłączania',
 		shutdown_cron_enable: 'Włącz cron do wyłączania',
 		password: 'Hasło',
 		password_desc:
-			'Niektóre karty sieciowe mają możliwość ustawienia hasło dla magicznych pakietów, znanych również jako <span class="badge">SecureON</span>. Hasło może mieć 0, 4 lub 6 znaków długości.',
+			'Niektóre karty sieciowe mają możliwość ustawienia hasła dla magicznych pakietów, znanych również jako <span class="badge">SecureON</span>. Hasło może mieć 0, 4 lub 6 znaków długości.',
 		groups: 'Grupy',
 		groups_desc: 'You can add devices to a group to have them sorted by group on the dashboard.', // TODO: Tricky one
 		groups_placeholder: "np. 'Piwnica' lub 'Biuro'",
 		network_scan_range_saved: 'Zapisano zakres skanowania',
 		network_scan_desc:
 			"Automatically scan your network for devices. For this to work, you need to run UpSnap as root/admin and have nmap installed and available in your $PATH (For docker users, thats already the case and you don't need to do anything). Scanning might take some seconds.",
-		network_scan_ip_range: 'IP range',
+		network_scan_ip_range: 'Zakres IP',
 		network_scan_no_range: 'No scan range',
-		network_scan_unsaved_changes: 'Unsaved changes',
+		network_scan_unsaved_changes: 'Niezapisane zmiany',
 		network_scan_running: 'Scan running',
 		network_scan: 'Scan',
 		network_scan_ip: 'IP:',
 		network_scan_mac: 'Mac:',
-		network_scan_mac_vendor: 'Mac vendor:',
-		network_scan_netmask: 'Netmask:',
-		network_scan_add_all: 'Add all devices',
+		network_scan_mac_vendor: 'Dostawca MAC:',
+		network_scan_netmask: 'Maska sieci:',
+		network_scan_add_all: 'Dodaj wszystkie urządzenia',
 		network_scan_replace_netmask: 'Replace netmask for all devices?',
-		network_scan_new_netmask: 'New netmask',
+		network_scan_new_netmask: 'Nowa maska sieci',
 		network_scan_include_unknown: 'Include devices where name is "Unknown"',
-		require_confirmation: 'Require Confirmation'
+		require_confirmation: 'Wymagaj potwierdzenie'
 	},
 	login: {
 		welcome: 'Welcome',
@@ -134,7 +133,7 @@ const pl = {
 		ping_interval_desc1:
 			'Sets the interval in which the devices are pinged. Leave blank to use default value of <span class="badge">@every 3s</span>.',
 		ping_interval_desc2:
-			'Learn more about the correct syntax for cron on <a class="link" href="https://en.wikipedia.org/wiki/Cron" target="_blank">Wikipedia</a> or refer to the <a class="link" href="https://pkg.go.dev/github.com/robfig/cron/v3" target="_blank">package documentation</a>.',
+			'Dowiedz się więcej na temat składni cron na <a class="link" href="https://pl.wikipedia.org/wiki/Cron" target="_blank">Wikipedii</a> lub w <a class="link" href="https://pkg.go.dev/github.com/robfig/cron/v3" target="_blank">dokumentacji pakietu</a>.',
 		lazy_ping_title: 'Lazy ping',
 		lazy_ping_desc:
 			"When lazy ping is turned on, UpSnap will only ping devices if there is an active user visiting the website. If it's turned off, UpSnap will always ping devices.",
