@@ -13,17 +13,17 @@ const pl = {
 			'Please ask the admin to grant you permissions to existing devices or to create new ones.'
 	},
 	account: {
-		page_title: 'Account',
-		account_type_admin: 'Admin',
-		account_type_user: 'User',
-		avatar_title: 'Avatar',
-		language_title: 'Language',
-		language_option_auto: 'Automatic',
-		change_password_title: 'Change password',
-		change_password_body: 'After the password has been changed, you will need to log in again.',
-		change_password_label: 'Old password',
-		change_password_new: 'New password',
-		change_password_confirm: 'Confirm password'
+		page_title: 'Konto',
+		account_type_admin: 'Administrator',
+		account_type_user: 'Użytkownik',
+		avatar_title: 'Awatar',
+		language_title: 'Język',
+		language_option_auto: 'Automatyczny',
+		change_password_title: 'Zmiana hasła',
+		change_password_body: 'Po zmianie hasła, będzie konieczne ponowne logowanie.',
+		change_password_label: 'Stare hasło',
+		change_password_new: 'Nowe hasło',
+		change_password_confirm: 'Potwierdź hasło'
 	},
 	device: {
 		page_title: 'New device',
