@@ -61,9 +61,8 @@ const pl = {
 		ports_number: 'Numer',
 		link: 'Link',
 		link_desc:
-			'Czyni Twoje urządzenie linkiem możliwym do kliknięcia, świetne do linkowania np. dashboardu.',
+			'Twoje urządzenie może być linkiem. Świetne do linkowania np. dashboardów.',
 		ping: 'Ping',
-		// TODO:
 		ping_desc:
 			'Możesz wykorzystać niestandardowe polecenie powłoki, aby sprawdzić, czy urządzenie jest włączone. Polecenie powinno zwrócić kod zakończenia <span class="badge">0</span> aby wskazać, że urządzenie jest włączone. Dowolny inny kod zakończenia poskutkuje oznaczeniem urządzenia jako wyłączone.',
 		ping_cmd: 'Niestandardowe polecenie ping',
@@ -105,19 +104,19 @@ const pl = {
 		network_scan_desc:
 			"Automatically scan your network for devices. For this to work, you need to run UpSnap as root/admin and have nmap installed and available in your $PATH (For docker users, thats already the case and you don't need to do anything). Scanning might take some seconds.",
 		network_scan_ip_range: 'Zakres IP',
-		network_scan_no_range: 'No scan range',
+		network_scan_no_range: 'Brak zakresu skanowania',
 		network_scan_unsaved_changes: 'Niezapisane zmiany',
-		network_scan_running: 'Scan running',
-		network_scan: 'Scan',
+		network_scan_running: 'Skanowanie w toku',
+		network_scan: 'Skan',
 		network_scan_ip: 'IP:',
 		network_scan_mac: 'Mac:',
 		network_scan_mac_vendor: 'Dostawca MAC:',
 		network_scan_netmask: 'Maska sieci:',
 		network_scan_add_all: 'Dodaj wszystkie urządzenia',
-		network_scan_replace_netmask: 'Replace netmask for all devices?',
+		network_scan_replace_netmask: 'Zastąpić maskę sieci dla wszystkich urządzeń?',
 		network_scan_new_netmask: 'Nowa maska sieci',
 		network_scan_include_unknown: 'Include devices where name is "Unknown"',
-		require_confirmation: 'Wymagaj potwierdzenie'
+		require_confirmation: 'Wymagaj potwierdzenia'
 	},
 	login: {
 		welcome: 'Welcome',
